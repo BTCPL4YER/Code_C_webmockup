@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/edit.css" type="text/css">
+     <link rel="apple-touch-icon" sizes="180x180" href="Images/Logos/Icons/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="Images/Logos/Icons/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="Images/Logos/Icons/favicon-16x16.png">
+     <link rel="manifest" href="Images/Logos/Icons/site.webmanifest">
+     <script src="https://kit.fontawesome.com/0035514012.js" crossorigin="anonymous"></script>
+     <title>Code Chronicles</title>
+  </head>
+  <body id="home">
+     <header class="nav">
+         <script src="script/auth.js" defer></script>
+         <nav aria-label="Primary">
+          <label class="logo"><abbr title="Code Chronicles">&lt/&gtC.C</abbr></label>
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="documents.html">Dashboard</a></li>
+             <li><a href="editor.html" aria-current="page">Editor</a></li>
+             <li><a href="manages.html">Manages</a></li>
+             <li><a href="lists.html">Lists</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="Login.html" id="logoutLink">Logout</a></li>
+           </ul>
+          </nav>
+      </header>
+      <main class="main">
+        <h1>Editor</h1>
+        <p class="intro">Draft ideas, sketch code, and keep your notes in one place.</p>
+      </main>
+      <section class="section">
+        <form class="editor" action="#" method="get">
+            <label class="field">
+              <span>Title</span>
+              <input type="text" placeholder="Project title" name="title">
+            </label>
+            <label class="field">
+              <span>Notes</span>
+              <textarea name="edit" id="edit" cols="60" rows="18" placeholder="Start writing here"></textarea>
+            </label>
+            <div class="actions">
+              <button type="button" class="btn ghost">Clear</button>
+              <button type="submit" class="btn primary">Save Draft</button>
+            </div>
+        </form>
+      </section>
+      <footer class="footer">
+          <ol>
+            <li><a href="#home">Back on Top</a></li>
+            <li><a href="#">Share</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ol>
+          <p class="watermark">Malko Labs</p>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.imgcode {
+    display: flex;
+    float: left;
+    width: 400px;
+    padding: 0 8px 10px;
+}
+
+.hackers {
+    display: flex;
+    float: left;
+    width: 400px;
+    padding: 0 8px;
+    align-items: flex-end;
+}
+.para {
+    color: antiquewhite;
+    padding: 20px;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+-----------------------------------------------
+<div class="section">
+        <section>
+          <article> 
+            <div class="sides">
+              <h1>The Exciting World of Coding</h1>
+              <div class="typing">
+                <img class="imgcode" src="Images/Images/IMG1.JPG" alt="imgcode"width="800">
+              </div>
+              <div class="para">
+                  <p><em>Coding</em> is like a superpower that allows us to bring our ideas to life in the digital realm. It's a language that empowers us to create websites, apps, and software that can change the world.<br>With <em>coding</em>, the possibilities are endless!
+                  Learning to <em>code</em> opens up a whole new world of opportunities.<br>It equips us with problem-solving skills, logical thinking, and creativity. Whether you're interested in web development, mobile apps, or data analysis, <em>coding</em> skills are in high demand.
+                  There are many programming languages to choose from, such as Python, JavaScript, and Java.<br>Each language has its strengths and areas of application. The best way to start is by picking a language that aligns with your goals and diving into tutorials and online resources.
+                  </p>
+                 <div class="progress">
+                    <img class="hackers" src="Images/Images/IMG3.JPG" alt="hackers" width="800">
+                    <p>As you progress in your <em>coding</em> journey, you'll discover the joy of building something from scratch and seeing it come to life.<br>Collaborating with other <em>coders</em>, participating in hackathons, and joining <em>coding</em> communities can also enhance your skills and provide valuable networking opportunities.</p>
+                  </div>
+               </div>      
+            </div>
+          </article>
+        </section>
+      </div>

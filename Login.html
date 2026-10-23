@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/log.css" type="text/css">
+     <link rel="apple-touch-icon" sizes="180x180" href="Images/Logos/Icons/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="Images/Logos/Icons/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="Images/Logos/Icons/favicon-16x16.png">
+     <link rel="manifest" href="Images/Logos/Icons/site.webmanifest">
+     <script src="script/login.js" defer></script>
+     <title>Code Chronicles</title>
+  </head>
+  <body id="home">
+     <header class="nav">
+         <nav aria-label="Primary">
+          <label class="logo"><abbr title="Code Chronicles">&lt/&gtC.C</abbr></label>
+          </nav>
+      </header>
+      <main class="main">
+        <form action="index.html" method="get" class="login-card" id="loginForm">
+          <h1>Access the Website</h1>
+          <p>If you want to continue, please log in.</p>
+          <p class="login-message" id="loginMessage" aria-live="polite"></p>
+          <div class="login-img">
+            <img src="Images/Logos/login.png" alt="Login" width="150" height="150" loading="lazy">
+          </div>
+          <label class="field">
+           <span>Username</span>
+           <input type="text" name="username" id="user" placeholder="Username" required maxlength="24" autocomplete="username">
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input type="password" name="pwd" id="S" placeholder="Password" required maxlength="24" autocomplete="current-password">
+           </label>
+           <button type="submit" class="btn primary">Login</button>
+           <div class="reg">
+             <a href="#">Don't have access yet?</a>
+           </div>
+        </form>
+      </main>
+  </body>
+</html>

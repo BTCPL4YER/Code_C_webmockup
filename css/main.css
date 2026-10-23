@@ -1,0 +1,279 @@
+@font-face {
+    font-family: Logo;
+    src: url('../fonts/PixelIntv-OPxd.ttf');
+}
+@font-face {
+    font-family: Nav;
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+@font-face {
+    font-family: Header;
+    src: url('../fonts/ProtestStrike-Regular.ttf');
+}
+@font-face {
+    font-family: parafont;
+    src: url('../fonts/FjallaOne-Regular.ttf');
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+:root {
+    --bg-deep: #0b1220;
+    --bg-panel: rgba(10, 18, 32, 0.78);
+    --text-main: #e7eef6;
+    --text-muted: #a7b3c6;
+    --accent: #3fd0c9;
+    --accent-strong: #1aa89c;
+    --gold: #ffb347;
+    --shadow: 0 18px 40px rgba(2, 8, 20, 0.35);
+    --radius: 18px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+    color: var(--text-main);
+    background-image: linear-gradient(140deg, rgba(8, 12, 24, 0.92), rgba(9, 18, 33, 0.6)), url('../Images/Background/BG1.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(2, 8, 20, 0.35);
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes navDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: transparent;
+}
+nav {
+    margin: 16px auto 0;
+    max-width: 1100px;
+    background: var(--bg-panel);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    color: var(--text-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    animation: navDrop 600ms ease both;
+}
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: Nav, sans-serif;
+}
+.logo {
+    font-family: Logo, sans-serif;
+    letter-spacing: 2px;
+}
+nav > ul > li a {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: all 200ms ease-in-out;
+}
+nav > ul > li a:hover,
+nav > ul > li a[aria-current="page"] {
+    color: var(--bg-deep);
+    background: var(--accent);
+}
+.main {
+    max-width: 900px;
+    margin: 48px auto 24px;
+    text-align: center;
+    padding: 24px;
+    animation: fadeUp 700ms ease both;
+}
+.main > h1 {
+    color: var(--text-main);
+    font-family: Header, sans-serif;
+    letter-spacing: 1px;
+    font-size: clamp(2rem, 3vw, 3.2rem);
+}
+.main > h3 {
+    color: var(--text-muted);
+    padding: 12px 0 18px;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+}
+.main > .about {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    font-family: Nav, sans-serif;
+    letter-spacing: 1px;
+    transition: all 150ms ease-in-out;
+}
+.btn.primary {
+    background: var(--accent);
+    color: var(--bg-deep);
+    box-shadow: 0 12px 20px rgba(63, 208, 201, 0.35);
+}
+.btn.primary:hover {
+    background: var(--accent-strong);
+}
+.btn.ghost {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: transparent;
+}
+.btn.ghost:hover {
+    background: rgba(63, 208, 201, 0.12);
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 0 24px 40px;
+}
+.content {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.card {
+    background: rgba(9, 16, 30, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    padding: 22px;
+    box-shadow: var(--shadow);
+    animation: fadeUp 700ms ease both;
+}
+.card:nth-child(1) { animation-delay: 80ms; }
+.card:nth-child(2) { animation-delay: 140ms; }
+.card:nth-child(3) { animation-delay: 200ms; }
+.card:nth-child(4) { animation-delay: 260ms; }
+.card h2 {
+    font-family: Header, sans-serif;
+    color: var(--gold);
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+.card p {
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.imgcode,
+.imgai,
+.imgcenter,
+.imgleft {
+    float: none;
+    width: 100%;
+    margin: 12px 0 8px;
+}
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(4, 8, 16, 0.9);
+    padding: 24px 16px;
+}
+.footer ol {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: parafont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.footer a {
+    color: var(--text-muted);
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
+}
+.footer a:hover {
+    color: var(--bg-deep);
+    background: var(--gold);
+}
+@media (max-width: 720px) {
+    nav {
+        border-radius: 24px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav > ul {
+        justify-content: center;
+    }
+    .main {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 1024px) {
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    nav {
+        margin: 12px 16px 0;
+    }
+}
+@media (max-width: 600px) {
+    .main {
+        padding: 16px;
+    }
+    .hero-actions {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+    .footer ol {
+        gap: 12px;
+    }
+}
